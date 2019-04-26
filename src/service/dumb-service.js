@@ -27,7 +27,7 @@ export function fetchSpell() {
       return response.json();
     }
   
-    fetch(fetchUrl, { method: "GET" })
+    fetch(fetchUrl, { method: "GET", mode: 'no-cors' })
       .then(status)
       .then(json)
       .catch(error => {

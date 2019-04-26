@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.8e4dc17060c439ea9900d167d367da91.js"
+  "/precache-manifest.aa9025b372bd1b064aae3914d2cf3a33.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "dnd-vue-app"});
