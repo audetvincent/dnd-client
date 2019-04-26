@@ -1,14 +1,15 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
+    <p>My JSON : {{myJson || 'is empty'}}</p>
   </div>
 </template>
 
 <script>
-import { getSomething } from "../service/dumb-service";
+import { fetchSpell } from "../service/dumb-service";
 export default {
-  created() {
-    getSomething();
+  computed: {
+    myJson: fetchSpell()
   }
 }
 </script>
